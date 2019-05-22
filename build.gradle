@@ -20,5 +20,11 @@ task someOtherTask {
 	 println 'This is some other Task'
 	}
 }
+task gradleTask {
+	doLast {
+	 println 'This is gradle Task'
+	}
+}
 sayHello.dependsOn anotherTask
 anotherTask.dependsOn someOtherTask
+someOtherTask.dependsOn gradleTask
