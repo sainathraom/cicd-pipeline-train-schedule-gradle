@@ -15,3 +15,4 @@ task anotherTask  {
     println 'This is another task'
   }
 }
+sayHello.dependsOn anotherTask
